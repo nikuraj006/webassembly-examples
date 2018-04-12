@@ -22,6 +22,7 @@
       WebAssembly.compileStreaming(fetch('simple.wasm'))
       .then(module => WebAssembly.instantiate(module, importObject))
       .then(instance => instance.exports.exported_func());
+      console.log(instance => instance.exports.exported_func());
     </script>
   </body>
 
